@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "workflow_auto_engine_backend": {
+      "main": "src/workflow_auto_engine_backend/main.mo",
+      "type": "motoko"
+    },
+    "workflow_auto_engine_frontend": {
+      "dependencies": [
+        "workflow_auto_engine_backend"
+      ],
+      "source": [
+        "src/workflow_auto_engine_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
